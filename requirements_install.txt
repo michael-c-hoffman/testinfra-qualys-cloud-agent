@@ -13,6 +13,7 @@ pyaml==20.3.1
 pycparser==2.20
 pyparsing==2.4.6
 pytest==5.4.1
+pytest-assume==2.2.1
 PyYAML==5.3.1
 six==1.14.0
 testinfra==5.0.0

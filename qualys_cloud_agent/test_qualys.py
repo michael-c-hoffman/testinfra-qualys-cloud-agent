@@ -32,8 +32,9 @@ class TestQualys:
         service = host.service(module_vars['qualys_cloud_agent_service_name'])
         # only check service is not performing a build
         if module_vars['qualys_cloud_agent_build']:
+            pytest.assume(service.is_enabled == module_vars['qualys_cloud_agent_service_enabled'])
+            pytest.assume(service.is_running == false)
             return
-
         # test service is in correct state
         if module_vars['qualys_cloud_agent_service_enabled']:
             pytest.assume(service.is_enabled == module_vars['qualys_cloud_agent_service_enabled'])
@@ -46,10 +47,12 @@ class TestQualys:
         test process is running correctly
         """
         module_vars = {**load_defaults, **load_overrides}
-        if module_vars['qualys_cloud_agent_build']:
-            return
         process = host.process.get(comm=module_vars['qualys_cloud_agent_service_process'])
-        pytest.assume(process.pid is not None)
+        if module_vars['qualys_cloud_agent_build']:
+            # ensure process is not running
+            pytest.assume(process is None)
+        else:
+            pytest.assume(process.pid is not None)
 
     @pytest.mark.qualys_cloud_agent_config_file
     def test_config_file(self, host, load_defaults, load_overrides):
