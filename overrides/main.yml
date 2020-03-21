@@ -1,0 +1,8 @@
+---
+qualys_cloud_agent_config_path: '/home/mhoffman/tmp/qualys/qualys.conf'
+# qualys_cloud_agent_config_CustomerId: !!null
+qualys_cloud_agent_config_ActivationId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+qualys_cloud_agent_config_CustomerId: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+qualys_cloud_agent_config_path_user: 'mhoffman'
+qualys_cloud_agent_config_path_group: 'mhoffman'
+qualys_cloud_agent_config_path_mode: '664'

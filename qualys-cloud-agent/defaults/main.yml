@@ -1,0 +1,25 @@
+---
+qualys_cloud_agent_build: false
+qualys_cloud_agent_package_name: 'qualys-cloud-agent'
+qualys_cloud_agent_package_version: !!null
+qualys_cloud_agent_service_name: 'qualys-cloud-agent'
+qualys_cloud_agent_service_enabled: true
+qualys_cloud_agent_service_running: true
+qualys_cloud_agent_service_process: 'qualys-cloud-agent'
+qualys_cloud_agent_config_path: '/etc/qualys-cloud-agent/qualys-cloud-agent.conf'
+qualys_cloud_agent_config_path_owner: 'root'
+qualys_cloud_agent_config_path_group: 'root'
+qualys_cloud_agent_config_path_mode: '644'
+qualys_cloud_agent_config_ActivationId: '00000000-0000-0000-0000-000000000000'
+qualys_cloud_agent_config_CustomerId: '00000000-0000-0000-0000-000000000000'
+qualys_cloud_agent_config_LogLevel: 0
+qualys_cloud_agent_config_LogFileDir: '/var/log/qualys/'
+qualys_cloud_agent_config_UseSudo: !!null
+qualys_cloud_agent_config_User: 'root'
+qualys_cloud_agent_config_Group: !!null
+qualys_cloud_agent_config_HostIdSearchDir: '/etc/qualys/hostid'
+qualys_cloud_agent_config_LogDestType: '/var/log/qualys/qualys-cloud-agent.log'
+qualys_cloud_agent_config_ServerUri: !!null
+qualys_cloud_agent_config_CmdMaxTimeOut: 1800
+qualys_cloud_agent_config_ProcessPriority: 0
+qualys_cloud_agent_config_UseAuditDispatcher: 0
